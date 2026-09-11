@@ -4,9 +4,12 @@ def main():
             self.name = name
             self.age = age
 
+        def __str__(self):
+            return self.name
+
     p1 = Person("Ali", 23)
 
-    print(p1.name)
+    print(p1)
 
 
 if __name__ == "__main__":
